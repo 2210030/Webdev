@@ -1,0 +1,14 @@
+.tables{
+    margin: 10px;
+    padding: 30 px;
+    background-color:blue;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+table{
+    border-collapse: collapse;
+    border-width: 10px;
+    /* border-radius: 5px; */
+    margin-left: 50px;
+    margin-right: 30px;
+}

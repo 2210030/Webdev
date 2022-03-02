@@ -1,0 +1,26 @@
+.tables2{
+    margin: 10px;
+    padding: 30 px;
+    background-color:chartreuse;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+table2{
+    border-collapse: collapse;
+    border-width: 10px;
+    /* border-radius: 5px; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+thead ,
+tr {
+    font-size: large;
+    background-color:aqua;
+}b
+
+th {
+    background-color:black;
+    letter-spacing: 5px;
+    padding: 8px;
+}

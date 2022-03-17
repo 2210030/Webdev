@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="projectstyles.css" />
+    <title>Project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div class="container">
+      <h3>New rows of tables!!!</h3>
+      <form
+      id="form-main" 
+      onsubmit="event.preventDefault();onsubmitFunction();"
+      >
+
+          <div>
+          <label> Username </label>
+          <input type="text" name="Username" id="Username" />
+        </div>
+        <div>
+          <label> email address </label>
+          <input type="text" name="email address" id="email address" />
+        </div>
+        <div>
+            <label> Student ID </label>
+            <input type="number" name="Student ID" id="StudentId" />
+        </div>
+        <div>
+            <label> Student Name </label>
+            <input type="text" name="Student Name" id="Student Name" />
+        </div>
+        <div>
+          <label> Age </label>
+          <input type="number" name="Age" id="Age" />
+        </div>
+        <div>
+        <label> Address </label>
+        <input type="text" name="Address" id="Address" />
+        </div>
+        <div>
+          <label> Mobile Number </label>
+          <input type="number" name="Mobile Number" id="Mobile Number" />
+        </div>
+        <div>
+            <label> Gender </label>
+            <input type="radio">Male<input type="radio">Female
+        </div>
+        <div>
+          <input type="button" name="Add" value="Add Row" onclick="AddRow()">
+          </div>
+        </form>
+      </div>
+      
+          <table class="table">
+              <thead>
+                  <tr>
+                      <th>Username</th>
+                      <th>email address</th>
+                      <th>Student ID</th>
+                      <th>Student Name</th>
+                      <th>Age</th>
+                      <th>Address</th>
+                      <th>Mobile Number</th>
+                      <th>Gender</th>
+                  </tr>
+              </thead>
+          </table>
+          <script>
+            function onsubmitFunction(){
+              console.log('click Add row button')
+              alert('Add row button clicked..!!')
+              let Username = document.getElementById('Username');
+              document.write(Username)
+              let emailaddress = document.getElementById('email address');
+              document.write(emailaddress)
+              let StudentId = document.getElementById('StudentId');
+              document.write(StudentId)
+              let StudentName = document.getElementById('StudentName');
+              document.write(StudentName)
+              let Age = document.getElementById('Age');
+              document.write(Age)
+              let Address = document.getElementById('Address');
+              document.write(Address)
+              let MobileNumber = document.getElementById('MobileNumber');
+              document.write(MobileNumber)
+              let Gender = document.getElementById('Gender');
+              document.write(Gender)
+            }
+          </script>
+    
+      </div>
+      
+
+    </body>
+  </html>
+
+  

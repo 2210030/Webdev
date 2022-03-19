@@ -16,10 +16,10 @@
   </head>
   <body>
       <div class="container">
-      <h3>New rows of tables!!!</h3>
+      <h1>New rows of tables!!!</h1>
       <form
       id="form-main" 
-      onsubmit="event.preventDefault();onsubmitFunction();"
+      onsubmit="addingRowToTable();"class="" action="project.html" method="" required
       >
 
           <div>
@@ -55,7 +55,8 @@
             <input type="radio">Male<input type="radio">Female
         </div>
         <div>
-          <input type="button" name="Add" value="Add Row" onclick="AddRow()">
+          <button type="button" class="addrow" onclick="appendRow()">Add Row</button>
+          <button type="button" class="resetTable" onclick="resetTable()">reset table</button>
           </div>
         </form>
       </div>
@@ -74,28 +75,8 @@
                   </tr>
               </thead>
           </table>
-          <script>
-            function onsubmitFunction(){
-              console.log('click Add row button')
-              alert('Add row button clicked..!!')
-              let Username = document.getElementById('Username');
-              document.write(Username)
-              let emailaddress = document.getElementById('email address');
-              document.write(emailaddress)
-              let StudentId = document.getElementById('StudentId');
-              document.write(StudentId)
-              let StudentName = document.getElementById('StudentName');
-              document.write(StudentName)
-              let Age = document.getElementById('Age');
-              document.write(Age)
-              let Address = document.getElementById('Address');
-              document.write(Address)
-              let MobileNumber = document.getElementById('MobileNumber');
-              document.write(MobileNumber)
-              let Gender = document.getElementById('Gender');
-              document.write(Gender)
-            }
-          </script>
+          
+          <script src="project.js"></script>
     
       </div>
       

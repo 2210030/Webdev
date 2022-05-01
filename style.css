@@ -1,0 +1,174 @@
+.table {
+  display: table;
+  height: 100%;
+  width: 100%; }
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%; }
+.global-page-container {
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  height: 100%; }
+.inline {
+  display: inline-block !important; }
+header {
+  background-color: #070707;
+  text-align: center;
+  line-height: 0;
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  width: 100%; }
+  header .logo, header .main-menu, header .search-icon, header .hamburguer-icon, header .utility-icons {
+    height: 100%; }
+  header .logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+    color: violet;
+    margin-bottom: 0; }
+  header .main-menu {
+    text-align: right; }
+    header .main-menu .menu-items {
+      margin: 0;
+      line-height: 1.2em; }
+    header .main-menu .menu-items li {
+      display: inline-block;
+      padding: 0;
+      text-decoration: none;
+      margin-right: 22px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 1.22px; }
+    header .main-menu .menu-items a,
+    header .main-menu .menu-items a:visited {
+      color:violet; }
+      header .main-menu .menu-items a:hover,
+      header .main-menu .menu-items a:visited:hover {
+        color: #FFFC31; }
+        .ghost-element {
+          width: 100%;
+          height: 70px; }
+/* End of Global Header Styles */
+/* Main Header Styles */
+.main-header {
+  height: 50px;
+  padding-left: 8px;
+  padding-right: 8px; }
+  .main-header .logo {
+    overflow: hidden; }
+    .main-header .logo h1 {
+      line-height: 22px;
+      font-size: 24px; }
+      .main-header .logo h1 .square {
+        width: 8px;
+        display: inline-block;
+        margin-right: 6px;
+        background-color: #8419db; }
+        .main-header .right-space, .main-header .hamburguer-icon {
+           display: none; }
+/* End of Main Header Styles */
+/* Sliding Header Styles (Sliding Menu) */
+.sliding-header-menu-outer {
+  position: fixed;
+  z-index: 99;
+  right: -320px;
+  overflow: hidden;
+  width: 320px;
+  height: 100%;
+  -webkit-transition: right 300ms ease-out;
+  -moz-transition: right 300ms ease-out;
+  -ms-transition: right 300ms ease-out;
+  -o-transition: right 300ms ease-out;
+  transition: right 300ms ease-out; }
+  .sliding-header-menu-outer .sliding-header-menu {
+    height: 100vh;
+    background-color:black;
+    position: relative;
+    width: 100%; }
+    .sliding-header-menu-outer .sliding-header-menu .sliding-header-menu-li {
+      margin: 0;
+      margin-top: 30px; }
+      .sliding-header-menu-outer .sliding-header-menu .sliding-header-menu-li li {
+        display: block;
+        height: 42px;
+        margin-right: 0;
+        text-align: center; }
+        .sliding-header-menu-outer .sliding-header-menu .sliding-header-menu-li li a, .sliding-header-menu-outer .sliding-header-menu .sliding-header-menu-li li a:visited {
+          color: #424143; }
+.show-menu {
+  right: 0px; }
+  @media only screen and (max-width: 40em) {
+    .main-header .main-menu .menu-items {
+    display: none; }
+    .main-header .logo {
+      overflow: hidden; }
+      .main-header .logo h1 {
+        font-size: 22px;
+        line-height: 22px; }
+        .main-header .right-space, .main-header .hamburguer-icon {
+          display: initial; }
+          .main-header .hamburguer-menu .hamburguer-icon img {
+            width: 18px;
+            height: auto; }
+            .sliding-header-menu-close-button {
+    height: 70px; } }
+/* min-width 641px and max-width 1023px */
+@media only screen and (min-width: 40.063em) and (max-width: 63.938em) {
+  .main-header {
+    height: 80px; }
+    .main-header .main-menu .menu-items {
+      display: none; }
+      .main-header .right-space, .main-header .hamburguer-icon {
+        display: initial; }
+        .logo h1 {
+           font-size: 22px;
+           line-height: 22px; }
+           .hamburguer-menu .hamburguer-icon img {
+              width: 18px;
+              height: auto; }
+              .sliding-header-menu-close-button {
+                height: 80px; }
+                .ghost-element {
+                  height: 80px; } }
+/* min-width 1024px and max-width 1440px ***********************************************/
+@media only screen and (min-width: 64em) and (max-width: 90em) {
+  .main-header {
+    height: 90px; }
+     .logo h1 {
+       font-size: 22px;
+       line-height: 22px; }
+       .sliding-header-menu-outer {
+         display: none !important; }
+         .ghost-element {
+            height: 90px; } }
+/* min-width 1441px ********************************************************************/
+@media only screen and (min-width: 90.063em) {
+  .main-header {
+    height: 90px; }
+    .logo h1 {
+       text-align: left; }
+       .sliding-header-menu-outer {
+          display: none !important; }
+          .ghost-element {
+             height: 90px; } }
+             .section-title {
+                text-align: center; }
+                .section-title h3 {
+                   font-size: 22px;
+                   font-family: 'Poppins', sans-serif;
+                   font-weight: 600;
+                   margin-top: 30px;
+                   margin-bottom: 8px;
+                   color:violet;
+                   text-transform: uppercase; }
+                   .section-title hr {
+                      text-align: center;
+                      margin: auto;
+                      width: 40px;
+                      border: solid 2px #000000; }

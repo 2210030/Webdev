@@ -1,0 +1,27 @@
+.tables3{
+    margin: 80px;
+    padding: 90 px;
+    background-color:red;
+    border-collapse: collapse;
+    font-size: 100px;
+}
+table3{
+    border-collapse: collapse;
+    border-width: 10px;
+    /* border-radius: 5px; */
+    margin-left: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+thead ,
+tr {
+    font-size: large;
+    background-color:aqua;
+}b
+
+th {
+    background-color:aqua;
+    letter-spacing: 2px;
+    padding: 80px;
+}

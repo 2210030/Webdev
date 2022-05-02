@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div class="container">
+      <h3>Play with FORMS!!!</h3>
+      <form 
+      id="form-main" 
+      onsubmit="event.preventDefault();onsubmitFunction();"
+      >
+
+          <div>
+          <label> First Name </label>
+          <input type="text" name="firstName" id="FirstName" />
+        </div>
+        <div>
+          <label> Last Name </label>
+          <input type="text" name="lastName" id="lastName" />
+        </div>
+        <div>
+            <label> Student ID </label>
+            <input type="number" name="Student ID" id="StudentId" />
+        </div>
+        <div>
+            <label> College Name </label>
+            <input type="text" name="College Name" id="College Name" />
+        </div>
+  
+        <div>
+            <label> Course </label>
+            <input type="text" name="Course" id="Course" />
+        </div>
+        <div>
+          <label> State </label>
+          <input type="text" name="State" id="State" />
+        </div>
+        <div>
+        <label> Country </label>
+        <input type="text" name="Country" id="Country" />
+        </div>
+        <div>
+          <label> Mobile Number </label>
+          <input type="number" name="Mobile Number" id="Mobile Number" />
+        </div>
+        <div>
+            <button class="submit">Submit</button>
+            <button class="reset">Reset</button>
+            <button class="radio">Radio</button>
+          </div>
+        </form>
+      </div>
+
+      <script>
+        function onsubmitFunction(){
+          console.log('click submit button, now')
+          alert('submit button clicked..!!')
+        }
+      </script>
+    </body>
+  </html>
+  

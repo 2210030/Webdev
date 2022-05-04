@@ -4,51 +4,46 @@ header {
     text-align: center;
     font-size: xx-large;
    }
-  .logo h1 {
+.logo h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size:x-large;
-    line-height: 22px;
+    font-size:xx-large;
+    line-height: 25px;
     color: violet;}
-  .main-menu {
+.main-menu {
       text-align: right;}
-  .main-menu .menu-items {
+      
+ .menu-items {
     margin: 0;
-    line-height: 1.2em; }
-  .menu-items li {
+    line-height:1.2em; }
+ .menu-items li {
     display: inline-block;
-    text-decoration: none;
     margin-right: 22px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 1.22px; }
-  .menu-items a {
+.menu-items a {
     color:violet; }
-  .sliding-header-menu-outer {
-    position: fixed;
-    z-index: 99;
-    right: -320px;
-    overflow: hidden;
-    width: 320px;
-    height: 100%;
-   }
-    .sliding-header-menu-outer .sliding-header-menu {
+ .sliding-header-menu-outer {
+      position: fixed;
+      z-index: 99;
+      right: -320px;
+      overflow: hidden;
+      width: 320px;
+      height: 100%;
+     }
+.sliding-header-menu {
       height: 100vh;
       background-color:violet;
       position: relative;
       width: 100%; }
-    .hamburguer-menu .hamburguer-icon img {
-      width: 18px;
+      
+.close-button {
       display: block;
-      height: auto; }
-    .close-button {
-      display: block;
-      height: 80px; }
-    .ghost-element {
       height: 80px; } 
-  .section-title {
+ .section-title {
     text-align: center; }
-    .section-title h3 {
+.section-title h3 {
       font-size: 22px;
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
@@ -56,51 +51,25 @@ header {
       margin-bottom: 8px;
       color:violet;
       text-transform: uppercase; }
-    .section-title hr {
+.section-title hr {
       text-align: center;
       margin: auto;
       width: 40px;
       border: solid 2px #000000; }
-  
-  
-  
-  @media only screen and (max-width: 40em) {
-    .section-title {
-      padding: 60px 0 40px 0; }
-      .section-title hr {
-        margin-bottom: 20px; } }
-  @media only screen and (min-width: 40.063em) and (max-width: 63.938em) {
-    .section-title {
-      padding: 60px 0 40px 0; }
-      .section-title h3 {
-        font-size: 22px; }
+   
   
     .aim-us img {
       width: 26%;
       margin-left: 12px;
       margin-bottom: 8px; }
     .aim-us .aim-us-text p {
-      font-size: 16px; } }
+      font-size: 16px; } 
   @media only screen and (min-width: 64em) and (max-width: 90em) {
     .section-title {
       padding: 70px 0 50px 0; }
       .section-title h3 {
         font-size: 22px; }
-  
-    .aim-us img {
-      width: 20%;
-      margin-left: 12px;
-      margin-bottom: 8px; }
-    .aim-us .aim-us-text p {
-      font-size: 18px; } 
-  
-    .aim-us img {
-      width: 20%;
-      margin-left: 12px;
-      margin-bottom: 8px; }
-    .aim-us .about-us-text p {
-      font-size: 18px; } 
-  .welcome-gallery, .welcome-inner, .welcome-slider {
+ .welcome-gallery, .welcome-inner, .welcome-slider {
     margin: 0;
     padding: 0; }
   
@@ -108,13 +77,13 @@ header {
     height: 400px;
     position: relative;
     width: 100%; }
-    .welcome-gallery .photo-section, .welcome-gallery .main-section-title, .welcome-gallery .photo-gradient {
+    .welcome-gallery .photo-section, .main-section-title {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%; }
-      .welcome-gallery .photo-section img {
+     .photo-section img {
         min-width: 100%;
         height: 100%;
         object-fit: fill;

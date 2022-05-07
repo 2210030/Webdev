@@ -1,16 +1,17 @@
-
+// Mobile Menu
 document.getElementById("hamburguer-icon").onclick = function() {
   document.getElementById("menu-out").style.right = "0"}
 
 document.getElementById("close-button").onclick = function() {
   document.getElementById("menu-out").style.right = "-320px";}
+  // Aim tab
 var ourAim = {
   "Mission": "Our goal is to not to waste paper and knowledge. The books that have been read cannot just simply stay in your bookcase, sell to us so that it can help others to afford knowledge.",
   "Vision": "To make knowlege affordable to everyone",
-  "Values": "XXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxx"};
+  "Values": "Exposure: Creating an online bookstore enables both your store and books to be discoverable by search engines like Google. "};
 
-var unseletectedColor = "#646872";
-var seletectedColor = "#2A2D34";
+var unselectedColor = "#646872";
+var selectedColor = "#2A2D34";
 
 var ourAimTabs = document.getElementsByClassName("single-tab");
 
@@ -28,19 +29,20 @@ for (var a = 0; a < ourAimTabs.length; a++) {
     this.style["font-weight"] = "bold";
   }
 }
+// Product slider
 var ourProducts = [
   {
-    'title': 'Books',
+    'title': 'BOOKS',
     'text': 'We sell all kinds of books like novels,fictional stories,auto biography,textbooks,literatures.. etc'
   },
 
   {
-    'title': 'table lamps',
+    'title': 'TABLE LAMPS',
     'text': 'Table lamps allow you to study at night, we have different kinds of it come check it out in our store.'
   },
 
   {
-    'title': 'Accesories',
+    'title': 'ACCESSORIES',
     'text': 'We have many accesories like paper weights, pens, colours, whitesheets...etc'
   }
   
@@ -73,6 +75,7 @@ previousArrow.onclick = function() {
   productTitleArea.innerHTML = title;
   productTextArea.innerHTML = text;
 }
+
 
 
 

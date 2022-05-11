@@ -81,13 +81,13 @@ async function fakestoreproducts(){
             document.getElementById('products1').innerHTML += `<li> Products Names :-  ${i.title} : Price :- ${i.price} </li>`
         }
     })
-    const atoz = []
+    const ascending = []
     data.map(i => {
-        atoz.unshift(i.title)
+        ascending.unshift(i.title)
 
     })
-    atoz.sort()
-    document.getElementById('products2').innerHTML += `<li> ${atoz} &nbsp; &nbsp;  </li>`
+    ascending.sort()
+    document.getElementById('products2').innerHTML += `<li> ${ascending} &nbsp; &nbsp;  </li>`
 
 }
 
@@ -101,13 +101,15 @@ async function catsapi(){
             document.getElementById('country_codes').innerHTML += `<li> ${i.name} </li>`
         }
     })
-    const ztoa = []
+    const desc = []
     data.map(i => {
-        ztoa.unshift(i.title)
-
+        desc.unshift(i.name)
     })
-    ztoa.sort()
-    document.getElementById('catsztoa').innerHTML += `<li> ${ztoa} &nbsp; &nbsp;  </li>`
+
+    desc.sort((i,j) =>{
+        return i.name - j.name;
+    })
+    document.getElementById('catsztoa').innerHTML += `<li> ${desc} &nbsp; &nbsp;  </li>`
 
 }
 catsapi()

@@ -72,7 +72,7 @@
             <div id="box-text">
                  Our goal is to not to waste paper and knowledge. The books that have been read cannot just simply stay in your bookcase, sell to us so that it can help others to afford knowledge.
             </div></div></div>
-            <!-- Phase-2: Products slider section -->
+        <!-- Phase-2: Products slider section -->
             <div class="our-products">
                 <div id="our-products" class="section-title">
                     <h3>Products</h3><hr></hr>
@@ -83,60 +83,56 @@
             </div>
             <div id="product-next" class="stripe-arrow"><p>>>></p></div>
         </div>
-        <!-- include 3 images in the order with their respective title -->
         <div class="books">
             <div class="container">
                 <div class="section-title">
                     <h3>Books</h3><hr></hr>
                 </div>
             </div>
-
-            <div class="Books" id="books">
-                <div class="rowbooks">
-                  <div class="books-col">
-                    <img src="img/img1.jpg" />
-                    <div class="effect"></div>
-                    <h3>Poetry and fiction</h3>
-                  </div>
-                
-              <div class="books-col">
-                <img src="img/Bitextbooks.jpg" />
-                <h3>Textbooks and Philosophy</h3>
-                <div class="effect">
+            <!-- include 3 images in the order with their respective title -->
+            <div class="books-item-image">
+                    <img src="img/img1.jpg" alt="poetry"/>   
                 </div>
-              </div>
-              <div class="books-col">
-                <img src="img/Biautobiography.jpg" />
-                <div class="effect"></div>
-                <h3>Auto biography and Literature</h3>
+                <div class="item-info">
+                    <div class="title">Poetry and fiction</div>
                 </div>
-              </div>
-            </div>
-        </div>
-        <!-- end of 3 images with their titles -->
-        <!-- phase-03 section -->
-        <div id="contact-us" class="contact-us">
+                <div class="books-item-image">
+                    <img src="img/Biautobiography.jpg" alt="autobiograpghy"/>   
+                </div>
+                <div class="item-info">
+                    <div class="title">Auto biography and Literature</div>
+                </div>
+                <div class="books-item-image">
+                    <img src="img/Bitextbooks.jpg" alt="textbooks"/>   
+                </div>
+                <div class="item-info">
+                    <div class="title">Textbooks and Philosophy</div>
+                </div>
+                <!-- end of 3 images with their titles -->
+                <!-- phase-03 section -->
+            <div id="contact-us" class="contact-us">
             <div class="section-title">
                 <h3>Contact</h3><hr></hr>
             </div>
-            <div class="contact-form">
-            <form action="http://postmail.invotes.com/send"method="post" id="email_form">
-                <input type="text" name="reply to" placeholder="Email"size="30px" style="padding: 5px;"><br><br>
-                <input type="text" name="subject" placeholder="Subject"size="30px" style="padding: 5px;"><br><br>
-                <textarea name="text" placeholder="Message"size="20px" style="padding: 3px;"></textarea><br>
-                <input type="hidden" name="access_token" value=" qldl3axka224p3hdqaa5aabq" />
-                <input type="hidden" name="success_url" value="." />
-                <input type="hidden" name="error_url" value=".?err=1" /><br>
-                <input id="submit_form" type="submit" value="Send" /><br><br>
-            </form>
-        </div>
         
+            <div class="contact-form small-12 medium-10 large-6 columns no-padding small-centered">
+                <form action="https://postmail.invotes.com/send"method="post" id="email_form">
+                    <input type="text" name="extra_fullName"placeholder="Full Name"size="30px" style="padding: 5px;"><br><br>
+                    <input type="text" name="extra_email"placeholder="E-mail Address"size="30px" style="padding: 5px;"><br><br>
+                    <textarea name="text" placeholder="Message"size="20px" style="padding: 3px;"></textarea>
+                    <input type="hidden" name="access_token" value="sowcqhg0p789yonmkkjaiwvd" /> 
+                    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" /><br>
+                    <input id="submit_form" type="submit" value="Send" />
+                </form>
+            </div>
+        </div></div>
         <!-- footer part -->
         <footer id="footer">
             <div class="footer-section inline">
                 <h4 class="footer-section-title">Follow us</h4>
                     <a href="http://www.facebook.com"><img src="img/social-icons/facebook.svg" alt="facebook-icon"></a>
-                    <a href="http://www.instagram.com"><img src="img/social-icons/instagram.svg" alt="instagram-icon"></a>
+                    <a href="http://www.instagram.com"><img src="img/social-icons/instagram.svg" alt="facebook-icon"></a>
             </div>
             <div class="contact">
                 <h4 class="footer-section-title">Location</h4>

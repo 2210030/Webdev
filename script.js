@@ -7,7 +7,7 @@ document.getElementById("close-button").onclick = function() {
   // Aim tab
 var ourAim = {
   "Mission": "Our goal is to not to waste paper and knowledge. The books that have been read cannot just simply stay in your bookcase, sell to us so that it can help others to afford knowledge.",
-  "Vision": "To make knowlege affordable to everyone and without having to worry about what their future will going to be.",
+  "Vision": "To make knowlege affordable to everyone",
   "Values": "Exposure: Creating an online bookstore enables both your store and books to be discoverable by search engines like Google. "};
 
 var unselectedColor = "#646872";
@@ -21,7 +21,7 @@ for (var a = 0; a < ourAimTabs.length; a++) {
     document.getElementById("box-text").innerHTML = ourAim[clickedValue];
 
     for (var b = 0; b < ourAimTabs.length; b++) {
-      ourAimTabs[b].style["background-color"] = unselectedColor;
+      ourAimTabs[b].style["background-color"] = unseletectedColor;
       ourAimTabs[b].style["font-weight"] = "normal";
     }
 
@@ -74,4 +74,13 @@ previousArrow.onclick = function() {
   var text = ourProducts[currentProduct].text;
   productTitleArea.innerHTML = title;
   productTextArea.innerHTML = text;
-}   
+}
+
+
+
+
+  
+   
+
+
+   
